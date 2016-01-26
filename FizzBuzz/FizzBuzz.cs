@@ -10,6 +10,10 @@ namespace FizzBuzz
     {
         public string Calculate(int p)
         {
+            if(p == 3)
+            {
+                return "Fizz";
+            }
             return p.ToString();
         }
     }
