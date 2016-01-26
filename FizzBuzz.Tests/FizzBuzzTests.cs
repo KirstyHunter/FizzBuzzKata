@@ -4,29 +4,33 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace FizzBuzz.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class FizzBuzzTests
     {
+        private FizzBuzz _fizzBuzz;
+
+        public FizzBuzzTests()
+        {
+            _fizzBuzz = new FizzBuzz();
+        }
+
         [TestMethod]
         public void WhenNumberIsOneReturnOne()
         {
-            var fizzBuzz = new FizzBuzz();
-            var result = fizzBuzz.Calculate(1);
+            var result = _fizzBuzz.Calculate(1);
             Assert.AreEqual("1", result);
         }
 
         [TestMethod]
         public void WhenNumberIsTwoReturnTwo()
         {
-            var fizzBuzz = new FizzBuzz();
-            var result = fizzBuzz.Calculate(2);
+            var result = _fizzBuzz.Calculate(2);
             Assert.AreEqual("2", result);
         } 
 
         [TestMethod]
         public void WhenNumberIsThreeReturnFizz()
         {
-            var fizzBuzz = new FizzBuzz();
-            var result = fizzBuzz.Calculate(3);
+            var result = _fizzBuzz.Calculate(3);
             Assert.AreEqual("Fizz", result);
         }
     }
