@@ -8,5 +8,9 @@ namespace FizzBuzz
 {
     public class FizzBuzz
     {
+        public string Calculate(int p)
+        {
+            return "1";
+        }
     }
 }
