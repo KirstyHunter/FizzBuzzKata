@@ -21,5 +21,13 @@ namespace FizzBuzz.Tests
             var result = fizzBuzz.Calculate(2);
             Assert.AreEqual("2", result);
         } 
+
+        [TestMethod]
+        public void WhenNumberIsThreeReturnFizz()
+        {
+            var fizzBuzz = new FizzBuzz();
+            var result = fizzBuzz.Calculate(3);
+            Assert.AreEqual("Fizz", result);
+        }
     }
 }
