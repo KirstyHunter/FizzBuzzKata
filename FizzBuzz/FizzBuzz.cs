@@ -14,7 +14,7 @@ namespace FizzBuzz
             {
                 return "Fizz";
             }
-            if(p == 5)
+            if(p % 5 == 0)
             {
                 return "Buzz";
             }
