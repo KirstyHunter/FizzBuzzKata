@@ -54,5 +54,11 @@ namespace FizzBuzz.Tests
             var result = _fizzBuzz.Calculate(10);
             Assert.AreEqual("Buzz", result);
         }
+        [TestMethod]
+        public void WhenNumberIsFifteenReturnFizzBuzz()
+        {
+            var result = _fizzBuzz.Calculate(15);
+            Assert.AreEqual("FizzBuzz", result);
+        }
     }
 }
