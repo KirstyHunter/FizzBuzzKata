@@ -10,7 +10,7 @@ namespace FizzBuzz
     {
         public string Calculate(int p)
         {
-            if(p == 3)
+            if(p % 3 == 0)
             {
                 return "Fizz";
             }
