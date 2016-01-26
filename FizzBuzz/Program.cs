@@ -10,6 +10,11 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
+            var fizzBuzz = new FizzBuzz();
+            for (int i = 1; i <= 100; i++)
+            {
+                Console.WriteLine(fizzBuzz.Calculate(i));
+            }
         }
     }
 }
