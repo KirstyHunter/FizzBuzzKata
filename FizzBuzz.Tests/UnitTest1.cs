@@ -12,6 +12,14 @@ namespace FizzBuzz.Tests
             var fizzBuzz = new FizzBuzz();
             var result = fizzBuzz.Calculate(1);
             Assert.AreEqual("1", result);
+        }
+
+        [TestMethod]
+        public void WhenNumberIsTwoReturnTwo()
+        {
+            var fizzBuzz = new FizzBuzz();
+            var result = fizzBuzz.Calculate(2);
+            Assert.AreEqual("2", result);
         } 
     }
 }
