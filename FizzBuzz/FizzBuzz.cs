@@ -10,7 +10,14 @@ namespace FizzBuzz
     {
         public string Calculate(int p)
         {
-            return "1";
+            if(p == 2)
+            {
+                return "2";
+            }
+            else
+            {
+                return "1";
+            }
         }
     }
 }
