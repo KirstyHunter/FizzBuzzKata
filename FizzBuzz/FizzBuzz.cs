@@ -10,15 +10,18 @@ namespace FizzBuzz
     {
         public string Calculate(int p)
         {
-            if (p % 3 == 0 && p % 5 == 0)
+            bool fizz = p % 3 == 0;
+            bool buzz = p % 5 == 0;
+
+            if (fizz && buzz)
             {
                 return "FizzBuzz";
             }
-            if(p % 3 == 0)
+            else if(fizz)
             {
                 return "Fizz";
             }
-            if(p % 5 == 0)
+            else if(buzz)
             {
                 return "Buzz";
             }
