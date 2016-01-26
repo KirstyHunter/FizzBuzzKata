@@ -10,6 +10,10 @@ namespace FizzBuzz
     {
         public string Calculate(int p)
         {
+            if (p % 3 == 0 && p % 5 == 0)
+            {
+                return "FizzBuzz";
+            }
             if(p % 3 == 0)
             {
                 return "Fizz";
